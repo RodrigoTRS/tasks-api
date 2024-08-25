@@ -32,7 +32,7 @@ export class ToggleTaskCompletionUseCase {
         updatingTask.toggleCompletion()
         const task = updatingTask.toValue()
         
-        await this.tasksRepository.update(task)
+        this.tasksRepository.update(task)
 
 
         return {

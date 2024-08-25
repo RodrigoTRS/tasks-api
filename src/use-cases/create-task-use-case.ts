@@ -32,7 +32,7 @@ export class CreateTaskUseCase {
         })
 
 
-        await this.tasksRepository.create(task)
+        this.tasksRepository.create(task)
         
         return {
             task

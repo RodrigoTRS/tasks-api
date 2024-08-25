@@ -4,6 +4,6 @@ import { UniqueID } from "../utils/unique-id";
 export interface TasksRepository {
     fetchAll: () => Promise<Task[]>
     fetchById: (id: UniqueID) => Promise<Task | void>
-    create: (task: Task) => Promise<void>
-    update: (task: Task) => Promise<void>
+    create: (task: Task) => void
+    update: (task: Task) => void
 }

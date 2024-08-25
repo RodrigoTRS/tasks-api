@@ -1,4 +1,3 @@
-import { parse } from "path";
 import { z } from "zod";
 
 const envSchema = z.object({
